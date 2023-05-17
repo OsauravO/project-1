@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image_placeholder{
+            background: url('loading.gif') no-repeat;
+            
+            width:400px;
+            height:200px;
+            padding-right: 450px;
+            flex: 1;
+            max-width: 500px;
+            box-sizing: content-box;
+            
+        }
+        .header{
+            background-color: #1f2937;
+            color:#f9faf8;
+        }
+        .logo{
+            padding-top: 10px;
+            padding-left: 20px;
+            
+            font-size: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .top{
+            display: flex;
+            padding-right: 8px;
+        }
+
+        .links{
+            display: flex;
+            margin-left: auto;
+            
+        }
+        ul{
+            display: flex;
+            gap: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: aliceblue;
+            font-size: large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          
+        }
+        li{
+            list-style-type: none;
+            
+        }
+        .heading{
+            margin-left: 20%;
+            font-size: 60px;
+            width: 400px;
+            padding-top: 80px;
+            font-weight: bolder;
+        }
+        .info{
+            margin-left: 20%;
+            width: 400px;
+
+        }
+        .temp{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        button{
+            color: #f9faf8;
+            background-color: blue;
+            border-style: none;
+            font-size: large;
+            font-weight: 900;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-radius: 8px;
+            margin-left: 20%;
+            margin-top: 10px;
+            height: 30px;
+            width: 100px;
+            margin-bottom: 45px;
+        }
+        .container{
+            position: relative;
+            text-align: center;
+            color: #f9faf8;
+        }
+        .center{
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            transform: translate(-50%,-50%);
+        }
+        .mid{
+            display: flex;
+            gap: 80px;
+            margin-left: 20%;
+        }
+        .image_placeholder1{
+            background: url('loading.gif') no-repeat;
+            border: 5px rgb(0, 140, 255) solid;
+            border-radius: 8px;
+            width:200px;
+            height:200px;
+        }
+        .text{
+            width: 230px;
+            padding-top: 10px;
+            color: grey;
+            font-size: large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+        .mid2{
+            display: flex;
+            gap: 62px;
+            margin-left: 20%;
+        }
+        .head{
+            margin-left: 38%;
+            font-size: 40px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 900;
+        }   
+        .slast{
+            background-color: rgb(172, 170, 170);
+            width: 100%;
+            height: 350px;
+        }
+        .text2{
+            padding-top: 80px;
+            margin-left: 20%;
+            font-size: 40px;
+            width: 1000px;
+            font-style: oblique;
+        }
+        .byline{
+            padding-top: 10px;
+            margin-left: 55%;
+            font-size: 40px;
+            font-weight: bold;
+
+        }
+        .last{
+            background-color: rgb(0, 110, 255);
+            width: 70%;
+            height: 200px;
+            margin-left: 14%;
+            border-radius: 10px;
+            align-items:center ;
+        }
+        .heading2{
+            color: #f9faf8;
+            padding-left: 200px;
+            padding-top: 60px;
+            font-size: 28px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .align{
+            display: flex;
+            gap: 0px;
+            align-self: center;
+            
+            
+        }
+        .text3{
+            font-size: larger;
+            margin-left: 15%;
+            padding-right: 0%;
+            
+            color: #f9faf8;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .button2{
+            border: #f9faf8 solid;
+           height: 50px;
+           width: 100px;
+           
+          
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <div class="top">
+            <div class="logo"><strong>Header Logo</strong> </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#">Header link one</a></li>
+                    <li><a href="#">Header link two</a></li>
+                    <li><a href="#">Header link three</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="temp">
+                <div class="heading">This website is awesome</div>
+                <div class="container">
+                <img class="image_placeholder"/>
+                <div class="center">This is a image placeholder</div>
+                </div>
+            </div>
+            <div class="info">This portion have some subtext that goes here under the main title.Its smaller font and colour is lower contrast.</div>
+            <button type="submit">Sign up</button>
+        </div>
+    </div>
+    <br>
+    <dv class="head">Some random information.</dv>
+    <br><br><br>
+    <div class="mid">
+        <img class="image_placeholder1"/>
+        
+        <img class="image_placeholder1"/>
+        
+        <img class="image_placeholder1"/>
+        
+        <img class="image_placeholder1"/>
+        
+    </div>
+    <div class="mid2">
+        <div class="text">this is some subtext under an illustration or image</div>
+        <div class="text">this is some subtext under an illustration or image</div>
+        <div class="text">this is some subtext under an illustration or image</div>
+        <div class="text">this is some subtext under an illustration or image</div>
+    </div>
+    <br><br><br><br><br>
+    <div class="slast">
+        <div class="text2">This is an insipiring quote,or a testimonial from a customer.Maybe it's just filling us space,or maybe people eill actually read it. Who knows? All I know is that it looks nice. </div>
+        <div class="byline">-Thor,God of Thunder</div>
+    </div>
+    <br><br><br><br><br><br>
+    
+    <div class="last">
+        <div class="heading2">Call to action! It's time!</div>
+        <div class="align">
+            <div class="text3">Sign up for our product by clicking that button right over there!</div>
+            <button class="button2" type="submit">Sign up</button>
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+</body>
+</html>
